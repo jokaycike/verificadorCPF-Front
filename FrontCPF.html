@@ -5,12 +5,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="./FrontCPF.js"></script>
+    <link rel="stylesheet" href="./FrontCPF.cs">
     <title>Document</title>
 </head>
 <body>
-    <p>oii tcahu</p>
-    <input type="text" id="caixa-texto">
-    <button onclick="BuscarApi()" type="button" class="button-pesquisar">
-    pesquisar</button>
+    <div class="sob-titulo-cpf">
+        <div class="titulo-cpf">
+            Verificador de CPF
+        </div>
+    </div>
+        
+
+    <form>
+        <div class="input-group">
+            <span class="input-group-text">
+                CPF:
+            </span>
+            <input type="text" id="caixa-texto" class="form-control" placeholder="Insira seu CPF">
+            <button type="button" class="btn btn-primary" onclick="BuscarAPI()">
+                Verificar CPF
+            </button>
+        </div>
+    </form>
+
+            
+            <div class="alert mensagemdealerta" id="MensagemSucesso">
+                <strong>Sucesso!</strong> O CPF é valido!
+            </div>
+            <div class="alert alert-danger" id="mensagemErro">
+                <strong>Erro!</strong> <span id="respostaErro"></span>
+            </div>
+            <div id="cpfOK" display="none">
+                <div>
+                    <span><strong>CPF: </strong></span>
+                    <span id="CPFFormatado"></span>
+                </div>
+                <div>
+                    <span><strong>Origem: </strong></span>
+                    <span id="EstadoCPF"></span>
+                </div>
+                <div>
+                    <span><strong>Data: </strong></span>
+                    <span id="DataHora"></span>
+                </div>
+
+            </div>
+    
 </body>
 </html>

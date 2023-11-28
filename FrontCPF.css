@@ -1,6 +1,6 @@
 body{
     background: linear-gradient(0deg, #1e000a, #ff3278);
-    height: 36.09em;
+    height: 44.3em;
 }
 
 .tudinho{
@@ -67,7 +67,7 @@ body{
     box-shadow: 3px 3px 14px 0px #000000;
     width: 22em;
     height: 8em;
-    padding: 13px 0 6px 0;
+    padding: 20px 0 6px 0;
     font-size: 1.6vw;
 }
 
@@ -80,9 +80,9 @@ body{
     color: white;
     text-align: center;
     box-shadow: 3px 3px 14px 0px #000000;
-    width: 31em;
-    height: 4.5em;
-    padding: 13px 0 6px 0;
+    width: 46em;
+    height: 3.5em;
+    padding: 20px 0 6px 0;
     font-size: 1.6vw;
 }
 

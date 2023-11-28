@@ -6,28 +6,30 @@ function BuscarAPI() {
     })
     .then((responseData) => {
       if (responseData['valido'] == false) {
-        cpfOK.style.display = "none";
         MensagemSucesso.style.display = "none";
-        mensagemErro.style.display = "block";
-        respostaErro.innerHTML =  data['Mensagem'];
+        MensagemErro.style.display = "block";
+        RespostaErro.innerHTML =  responseData['mensagem'];
       }
       else {
-        cpfOK.style.display = "block";
         MensagemSucesso.style.display = "block";
-        mensagemErro.style.display = "none";
+        MensagemErro.style.display = "none";
       }
       CPFFormatado.innerHTML = responseData['cpf'];
-      EstadoCPF.innerHTML = responseData['Estado'];
+      EstadoCPF.innerHTML = responseData['estado'];
 
-      DataHora.innerHTML = responseData['Data'];
+      var data = new Date(responseData['data']);
+      var dataFormatada = `${padZero(data.getDate())}/${padZero(data.getMonth() + 1)}/${data.getFullYear()} ${padZero(data.getHours())}:${padZero(data.getMinutes())}:${padZero(data.getSeconds())}`;
+      DataHora.innerHTML = dataFormatada;
     });
 }
 
+function padZero(num) {
+  return num < 10 ? `0${num}` : num;
+}
 
 function Inicio() {
-  cpfOK.style.display = "none";
   MensagemSucesso.style.display = "none";
-  mensagemErro.style.display = "none";
+  MensagemErro.style.display = "none";
 }
 
 window.onload = Inicio;

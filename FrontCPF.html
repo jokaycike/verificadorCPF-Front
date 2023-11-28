@@ -1,41 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="./FrontCPF.js"></script>
-    <link rel="stylesheet" href="./FrontCPF.cs">
-    <title>Document</title>
+    <link rel="stylesheet" href="FrontCPF.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Verificador de CPF</title>
 </head>
+
 <body>
-    <div class="sob-titulo-cpf">
-        <div class="titulo-cpf">
-            Verificador de CPF
+    <div class="tudinho">
+        <div class="sob-titulo-cpf">
+            <div class="titulo-verificador-cpf">
+                Verificador de CPF
+            </div>
         </div>
-    </div>
+
+    
+        <form class="form-cpf">
+            <div class="sob-titulo-cpf">
+                <span class="titulo-cpf">
+                    Insira um CPF para verificar se e válido:
+                </span>
+            </div>
+            <div class="sob-caixa-texto">
+                <input type="text" id="caixa-texto"  placeholder="Insira seu CPF" autocomplete="off">
+            </div>
+            <div class="sob-button-cpf">
+                <button type="button" class="button-cpf" onclick="BuscarAPI()">
+                    Verificar CPF
+                </button>
+            </div>
+        </form>
         
 
-    <form>
-        <div class="input-group">
-            <span class="input-group-text">
-                CPF:
-            </span>
-            <input type="text" id="caixa-texto" class="form-control" placeholder="Insira seu CPF">
-            <button type="button" class="btn btn-primary" onclick="BuscarAPI()">
-                Verificar CPF
-            </button>
-        </div>
-    </form>
-
-            
-            <div class="alert mensagemdealerta" id="MensagemSucesso">
-                <strong>Sucesso!</strong> O CPF é valido!
-            </div>
-            <div class="alert alert-danger" id="mensagemErro">
-                <strong>Erro!</strong> <span id="respostaErro"></span>
-            </div>
-            <div id="cpfOK" display="none">
+        <div class="sob-alerta-sucesso">
+            <div class="alerta-sucesso" id="MensagemSucesso">
+                <strong>Sucesso!</strong> O CPF inserido é valido!
                 <div>
                     <span><strong>CPF: </strong></span>
                     <span id="CPFFormatado"></span>
@@ -48,8 +52,15 @@
                     <span><strong>Data: </strong></span>
                     <span id="DataHora"></span>
                 </div>
-
             </div>
-    
+        </div>
+
+        <div class="sob-alerta-erro">
+            <div class="alerta-erro" id="MensagemErro">
+                <strong>Erro!</strong> <span id="RespostaErro"></span>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>

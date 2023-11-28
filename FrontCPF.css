@@ -1,0 +1,92 @@
+body{
+    background: linear-gradient(0deg, #1e000a, #ff3278);
+    height: 36.09em;
+}
+
+.tudinho{
+    margin:4em 2em 0 2em;
+}
+
+.form-cpf{
+    display:grid;
+    justify-content: center;
+}
+
+.titulo-verificador-cpf{
+    text-align: center;
+    font-size: 3vw;
+    color:white;
+    font-weight: 700;
+    text-shadow: 3px 3px 8px black;
+    padding: 0 0px 27px 0;
+}
+
+.titulo-cpf{
+    color:white;
+    font-size: 2vw;
+    font-weight: 400;
+}
+
+.sob-titulo-cpf{
+    padding:0 0 20px 0;
+}
+
+.sob-caixa-texto{
+    text-align: center;
+    padding: 0 0 33px 0;
+}
+
+#caixa-texto{
+    height: 3em;
+    width: 14em;
+    border: none;
+    font-size: 1.7vw;
+    border-radius: 60px;
+    text-align: center;
+}
+
+.sob-button-cpf{
+    text-align: center;
+    padding: 0 0 19px 0;
+}
+
+.button-cpf{
+    border: 1px solid white;
+    font-size: 1.4vw;
+    border-radius: 5px;
+    height: 2.2em;
+    width: 10em;
+    font-weight: 600;
+    color: white;
+    background: #f63074;
+}
+
+.alerta-sucesso{
+    color: white;
+    text-align: center;
+    box-shadow: 3px 3px 14px 0px #000000;
+    width: 22em;
+    height: 8em;
+    padding: 13px 0 6px 0;
+    font-size: 1.6vw;
+}
+
+.sob-alerta-sucesso{
+    display: flex;
+    justify-content: center;
+}
+
+.alerta-erro{
+    color: white;
+    text-align: center;
+    box-shadow: 3px 3px 14px 0px #000000;
+    width: 31em;
+    height: 4.5em;
+    padding: 13px 0 6px 0;
+    font-size: 1.6vw;
+}
+
+.sob-alerta-erro{
+    display: flex;
+    justify-content: center;
+}
